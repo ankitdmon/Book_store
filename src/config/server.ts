@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import dns from "dns";
 import os from "os";
 import connectDB from "./DB";
+import routes from "../router/index";
 
 const app = express();
 const PORT = process.env.PORT;
@@ -12,6 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 connectDB();
+
+app.use("/", routes);
 
 app.listen(PORT, async () => {
   console.log(`Server is running on PORT: ${PORT}`);
