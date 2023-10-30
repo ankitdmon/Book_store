@@ -1,8 +1,6 @@
-# Book_store
-
 # RESTful API using Node.js for managing books
 
-A simple CRUD app for book management by using NodeJs, typeScript MongoDB. Where we can add book, update book, delete Book(Soft delete), get all books, get a perticular book by thir Id.
+A simple CRUD app for book management using NodeJs, TypeScript, and MongoDB. We can add a book, update a book, delete a Book(Soft delete), get all books, and get a particular book by their ID.
 
 ### Tech Stacks
 
@@ -25,13 +23,13 @@ You can download and install Go from the official website:
 https://nodejs.org/en
 ```
 
-Also you need to add package Manager `YARN` official website:
+Also, you need to add the package Manager `YARN` official website:
 
 ```
 https://yarnpkg.com/
 ```
 
-Make sure NodeJs is properly installed and added to your system's PATH.
+Could you ensure NodeJs is properly installed and added to your system's PATH?
 
 
 ### Set up your Node module
@@ -60,11 +58,11 @@ To verify that all dependencies are installed successfully, you can run:
 ```
 npm start
 ```
-This will display a list of all the installed node-modules and their versions.
+This will display a list of all the installed node modules and their versions.
 
 ### Building and Running Your Project
 
-Now, you should be able to build and run your project. You may have a `app.ts` file or an entry point for your project. To run your application, use the `yarn start or nom start` command:
+Now, you should be able to build and run your project. You may have an `app.ts` file or an entry point for your project. To run your application, use the `yarn start or nom start` command:
 
 ```
 npm start or yarn start
@@ -94,7 +92,7 @@ This repository follows a specific structure to maintain organization and modula
 
     - **book.ts**: Router for book-related routes.
 
-  - **controller**: Controllers for handling API requests.
+  - **Controller**: Controllers for handling API requests.
 
     - **book.ts**: Controller for book-related logic.
 
@@ -118,7 +116,7 @@ The codebase is organized into separate folders to maintain modularity and separ
 
 - **router**: Defines API routes, allowing for clean and structured request handling.
 
-- **controller**: Contains controllers that handle business logic and interact with models.
+- **Controller**: Contains controllers that handle business logic and interact with models.
 
 - **helper**: Utility functions and global response handling.
 
@@ -140,7 +138,7 @@ You can interact with the system using Postman, a popular API testing tool. Foll
 
 1. Open Postman.
 
-2. Set the endpoint to `http://localhost:8080/api` with `POST` method.
+2. Set the endpoint to `http://localhost:8080/api` with the `POST` method.
 
 3. Choose one of the following request payloads and enter it into the request body.
 
@@ -158,7 +156,7 @@ This API provides endpoints for managing books.
 - **Request Body**: JSON object representing the book.
 ```
 {
-    "title":"Rich Dad Poor Dad", 
+    "title": "Rich Dad Poor Dad", 
     "author": "ABC", 
     "summary":"abc" 
 }
